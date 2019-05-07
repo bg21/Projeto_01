@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-position: inside;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+.container{
+	max-width: 1280;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+.clear{
+	clear: both;
+}
+header{
+	width: 100%;
+	background-color:#005580;
+	border-bottom: 4px solid #d9d9d9;
+}
+header img{
+	width: 180px;
+}
+
+section.banner{
+	width: 100%;
+	height: 600px;
+	background-image: url('../imgs/bg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+section.banner > .container{
+	height: 100%;
+}
+
+div.form-banner{
+	padding: 20px;
+	width: 400px;
+	height: calc(100% + 60px);
+	background-color: #f2f2f2;
+	float: right;
+	top: -30px;
+	position: relative;
+	border-color: rgba(0, 102, 153, 0.6);
+	border-width: 4px;
+	border-style: solid;
+	background-clip: padding-box;
+}
+div.form-banner h3{
+	font-weight: lighter;
+	font-size: 24px;
+	text-align: center;
+	color: #333;
+}
+div.form-banner form input[type=text],
+div.form-banner form input[type=email]{
+	width: 100%;
+	height: 40px;
+	border:1px solid #e6e6e6;
+	padding-left: 10px;
+	color: #333;
+	font-weight: lighter;
+}
+div.input-form{
+	margin-top: 30px;
+}
+div.input-form span{
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+div.form-banner form input[type=submit]{
+	width: 100%;
+	height: 50px;
+	border:0;
+	background-color: #069;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+div.form-banner form input:hover[type=submit]{
+	background-color:#0077b3;
+}
+
+div.input-form p{
+	text-align: center;
+	font-weight: lighter;
+}
+section.banner{
+	width: 100%;
+}
+div.bg-sobre{
+	width: 50%;
+	padding: 20px;
+	background-color:rgba(242, 242, 242,0.6);
+	float: left;
+	margin-top: 200px;
+}
+div.bg-sobre p{
+	color:#333;
+	font-weight: lighter;
+}
+div.bg-sobre ul{
+	margin-top: 30px;
+}
+div.bg-sobre ul li{
+	margin-top: 10px;
+	color:#333;
+	font-weight: lighter;
+}
+section.sobre{
+	padding:20px 0;
+	background-color: #f2f2f2;
+	text-align: center;
+	width: 100%;
+}
+section.sobre h3{
+	margin-top: 40px;
+	font-weight: normal;
+	font-size: 22px;
+	color: #333;
+}
+
+section.sobre p{
+	margin: 20px 0;
+	text-align: left;
+	font-weight: lighter;
+	color: #333;
+	width: 70%;
+	display: inline-block;
+}
+.arrow{
+	background-image: url('../imgs/arrow.png');
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	position: relative;
+	top: 50px;
+}
+
+section.icones{
+	padding: 80px 0;
+	background-color: #005580;
+	border-bottom: 4px solid #d9d9d9;
+	width: 100%;
+}
+div.icon{
+	width: 33.3%;
+	float: left;
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+section.icones h3{
+	color: white;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+section.icones h2{
+	color: white;
+	font-size: 50px;
+	margin-top: 50px;
+}
+section.icones p{
+	text-align: justify;
+}
+section.icones h3.icon-title{
+	font-size: 20px;
+}
+section.icones p{
+	font-weight: lighter;
+	color: white;
+	margin-top: 10px;
+}
+
+footer.footer{
+	width: 100%;
+	padding: 40px 0;
+	background-color: #f2f2f2;
+}
+footer.footer h3{
+	color: #333;
+	text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+	header{
+		text-align: center;
+	}
+	section.banner{
+		width: 100%;
+		padding: 40px 2%;
+		height: auto;
+		text-align: center;
+	}
+	div.form-banner{
+		height: 100%;
+		width: 80%;
+		text-align: left;
+		float: none;
+		margin-top: 60px;
+		display: inline-block;
+	}
+	div.bg-sobre{
+		width: 80%;
+		margin-top: 0;
+		float: none;
+		display: inline-block;
+	}
+	section.sobre p{
+		width: 90%;
+	}
+	div.icon{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 768px) and (min-width: 440px){
+	div.form-banner{
+		width: 100%;
+		text-align: left;
+	}
+	div.bg-sobre{
+		width: 100%;
+	}
+	section.sobre p{
+		width: 90%;
+	}
+	div.icon{
+		width: 100%;
+	}
+}
